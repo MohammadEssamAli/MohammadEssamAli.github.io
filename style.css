@@ -1,0 +1,134 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --background-light: #f4f4f4;
+  --background-dark: #333;
+  --text-color-light: #333;
+  --text-color-dark: #f4f4f4;
+  --header-background-light: #333;
+  --header-background-dark: #222;
+  --skills-bar-light: #e9ecef;
+  --skills-bar-dark: #444;
+  --skills-percentage-light: #6f42c1;
+  --skills-percentage-dark: #bb86fc;
+  --link-color-light: #6f42c1;
+  --link-color-dark: #bb86fc;
+  --btn-primary-light: #6f42c1;
+  --btn-primary-dark: #bb86fc;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color-light);
+  background-color: var(--background-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+  background-color: var(--header-background-light);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills__bar {
+  height: 8px;
+  background-color: var(--skills-bar-light);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skills__percentage {
+  height: 100%;
+  background-color: var(--skills-percentage-light);
+}
+
+a {
+  color: var(--link-color-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-light);
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #5a32a3;
+}
+
+h1, h2, h4 {
+  font-weight: 700;
+}
+
+p, ul, li {
+  font-weight: 400;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.section-title i {
+  margin-right: 10px;
+}
+
+/* Dark theme */
+body.dark-theme {
+  color: var(--text-color-dark);
+  background-color: var(--background-dark);
+}
+
+body.dark-theme .header {
+  background-color: var(--header-background-dark);
+}
+
+body.dark-theme .section {
+  background-color: #444;
+}
+
+body.dark-theme .skills__bar {
+  background-color: var(--skills-bar-dark);
+}
+
+body.dark-theme .skills__percentage {
+  background-color: var(--skills-percentage-dark);
+}
+
+body.dark-theme a {
+  color: var(--link-color-dark);
+}
+
+body.dark-theme .btn-primary {
+  background-color: var(--btn-primary-dark);
+  color: #fff; /* Ensure text color is white */
+}
